@@ -18,4 +18,4 @@ J'ai pu réaliser une carte de situation ainsi que des cartes concernant les ris
 
 ### Cartes de risques 
 
-En complément de la carte de situation, j'ai produit des cartes relatant des risques naturels et technologiques présents sur le territoire. Cette commune admet 2 risques naturels à savoir, des <a href="https://astro.build/">innondations par remontée de nappes</a>, des <a href="https://astro.build/">zones de retaits et gonflements d'argiles</a>, ainsi qu'un risque technologique lié au <a href="https://astro.build/">transport de matières dangereuses</a>.
+En complément de la carte de situation, j'ai produit des cartes relatant des risques naturels et technologiques présents sur le territoire. Cette commune admet 2 risques naturels à savoir, des <a href="https://1drv.ms/b/s!Amo3RHGXfk2HokKVfSNSJyyl_pSA?e=nZwqSe">innondations par remontée de nappes</a>, des <a href="https://astro.build/">zones de retaits et gonflements d'argiles</a>, ainsi qu'un risque technologique lié au <a href="https://1drv.ms/b/s!Amo3RHGXfk2HokA3mXX9D3QMxYmz?e=g49sxl">transport de matières dangereuses</a>.
