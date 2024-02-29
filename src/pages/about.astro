@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="À propos de | Matteo Tournier" description="About Matteo Tournier">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="À propos de moi"
+				tagline="Découvrez mes compétences."
+			>
+			
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Formation</h2>
+				<div class="content">
+					<p>
+						Actuellement étudiant en troisième année de licence géographie et aménagement, parcours géographie, espaces et sociétés, à l'Institut d'Urbanisme et de Géographie Alpine (IUGA) à Grenoble.
+					</p>
+					<p>
+						Plusieurs unités d’enseignement m’ont permis de développer des compétences en géomatique, notamment concernant l’aspect cartographique. Au cours de ma 3ème année, j’ai pu utiliser le logiciel QGIS dans deux cadres différents. Dans un premier temps, à l’IUGA, notamment dans les UE : « La carte dans l’action publique » et « Information géographique : géomatique ». Les cours disposés étaient plutôt réservés à de la pratique, avec des réalisations de cartes thématiques. Au fil du semestre, les différents projets en groupe m'ont donner la possibilité de véritablement consolider nos connaissances. Dans un deuxième temps, j’ai pu perfectionner mes compétences en matière de SIG au sein de l’Institut des Risques Majeurs. Comme j’ai pu l’évoquer précédemment, ce stage m’a conforté dans mon choix de m’orienter vers le domaine de la géomatique. J’ai pu travailler sur des cartographies opérationnelles d’aide à la gestion de crise avec l’outil QGIS.
+					</p>
+					
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Poursuite de mes études</h2>
+				<div class="content">
+					<p>J'envisage un Master en géomatique afin d’approfondir mes connaissances et me spécialiser dans ce domaine. Ce cursus concorde avec mes projets professionnels, car il représente, d’une part, une porte d’entrée vers des métiers d’avenir auxquels je porte une attention toute particulière, notamment géomaticien ou ingénieur en géomatique et, d’autre part, puisqu’il permet de toucher à de nombreux secteurs.
+				</p>
+
+			</section>
+
+			<section>
+				</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
